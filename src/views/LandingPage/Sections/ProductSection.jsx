@@ -132,24 +132,19 @@ class ProductSection extends React.Component {
                       className={classes.modalBody}
                     >
                       <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. Separated they live in Bookmarksgrove right at
-                        the coast of the Semantics, a large language ocean. A
-                        small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth. Even the all-powerful
-                        Pointing has no control about the blind texts it is an
-                        almost unorthographic life One day however a small line
-                        of blind text by the name of Lorem Ipsum decided to
-                        leave for the far World of Grammar.
+                        We offer tents in various sizes:
+                        <ul>
+                          <li>20 x20</li>
+                          <li>20 x30</li>
+                          <li>20 x40</li>
+                          <li>30 x40</li>
+                          <li>30 x60</li>
+                          <li>30 x80</li>
+                          <li>30 x100</li>
+                        </ul>
                       </p>
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
-                      <Button color="transparent" simple>
-                        Nice Button
-                      </Button>
                       <Button
                         onClick={() => this.handleClose("tentModal")}
                         color="danger"
@@ -167,12 +162,11 @@ class ProductSection extends React.Component {
                 <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
                   <img src={mechoui} alt="Méchoui trailer" className={imageClasses} />
                 </GridItem>
-                <h4 className={classes.cardTitle}>
-                  Méchouis
-                </h4>
+                <h4 className={classes.cardTitle}>Méchouis</h4>
                 <CardBody>
                   <p className={classes.description}>
-                    Our catering service includes full course meal customizable to your choice. Ask us about our rental service of mechoui machines with computer automated cooking.
+                    Our catering service includes full course meal customizable
+                    to your choice. Ask us about our rental service of mechoui machines with computer automated cooking.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.cardFooter}>
@@ -215,25 +209,16 @@ class ProductSection extends React.Component {
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
-                      <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. Separated they live in Bookmarksgrove right at
-                        the coast of the Semantics, a large language ocean. A
-                        small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth. Even the all-powerful
-                        Pointing has no control about the blind texts it is an
-                        almost unorthographic life One day however a small line
-                        of blind text by the name of Lorem Ipsum decided to
-                        leave for the far World of Grammar.
-                      </p>
+                      <p>Catoring services: </p>
+                      <ul>
+                        <li>Plates are fully customizable</li>
+                        <li>
+                          Various types of meat can be cooked at the same time
+                        </li>
+                        <li>Vegetarian options can be available</li>
+                      </ul>
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
-                      <Button color="transparent" simple>
-                        Nice Button
-                      </Button>
                       <Button
                         onClick={() => this.handleClose("mechouiModal")}
                         color="danger"
@@ -252,15 +237,13 @@ class ProductSection extends React.Component {
                 <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
                   <img src={tablesAndChairs} alt="Wedding decorations" className={imageClasses} />
                 </GridItem>
-                <h4 className={classes.cardTitle}>
-                  Tables and chairs
-                </h4>
+                <h4 className={classes.cardTitle}>Tables and chairs</h4>
                 <CardBody>
                   <p className={classes.description}>
                     We offer several models of tables and chairs to suit the decor style of your event.
                   </p>
                 </CardBody>
-                
+
                 <CardFooter className={classes.cardFooter}>
                   <Button
                     color="primary"
@@ -301,25 +284,18 @@ class ProductSection extends React.Component {
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
-                      <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. Separated they live in Bookmarksgrove right at
-                        the coast of the Semantics, a large language ocean. A
-                        small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth. Even the all-powerful
-                        Pointing has no control about the blind texts it is an
-                        almost unorthographic life One day however a small line
-                        of blind text by the name of Lorem Ipsum decided to
-                        leave for the far World of Grammar.
-                      </p>
+                      <p>Tables:</p>
+                      <ul>
+                        <li>Round</li>
+                        <li>Rectangle</li>
+                      </ul>
+                      <p>Fanback folding chairs:</p>
+                      <ul>
+                        <li>Black</li>
+                        <li>White</li>
+                      </ul>
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
-                      <Button color="transparent" simple>
-                        Nice Button
-                      </Button>
                       <Button
                         onClick={() => this.handleClose("tableModal")}
                         color="danger"
@@ -343,7 +319,7 @@ class ProductSection extends React.Component {
                     We pride ourselves on ensuring the toilets spotless on arrival.
                   </p>
                 </CardBody>
-                
+
                 <CardFooter className={classes.cardFooter}>
                   <Button
                     color="primary"
@@ -384,25 +360,20 @@ class ProductSection extends React.Component {
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
-                      <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. Separated they live in Bookmarksgrove right at
-                        the coast of the Semantics, a large language ocean. A
-                        small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth. Even the all-powerful
-                        Pointing has no control about the blind texts it is an
-                        almost unorthographic life One day however a small line
-                        of blind text by the name of Lorem Ipsum decided to
-                        leave for the far World of Grammar.
-                      </p>
+                      <p>Models available:</p>
+                      <ul>
+                        <li>
+                          Standard model - Includes toilet paper. Sanitation
+                          pumps available on rental.
+                        </li>
+                        <li>
+                          Deluxe model - Includes hand soap, toilet paper, paper
+                          towel, waste basket, lights.
+                        </li>
+                        <li>Handicap model - Includes toilet paper.</li>
+                      </ul>
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
-                      <Button color="transparent" simple>
-                        Nice Button
-                      </Button>
                       <Button
                         onClick={() => this.handleClose("toiletModal")}
                         color="danger"
