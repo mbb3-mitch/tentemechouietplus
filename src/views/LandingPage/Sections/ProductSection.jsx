@@ -93,12 +93,13 @@ class ProductSection extends React.Component {
                 </CardBody>
                 <CardFooter className={classes.cardFooter}>
                   <Button
-                    color="primary"
+                    color="success"
                     block
                     onClick={() => this.handleClickOpen("tentModal")}
                   >
-                    <LibraryBooks className={classes.icon} />Details
-                      </Button>
+                    <LibraryBooks className={classes.icon} />
+                    Details
+                  </Button>
                   <Dialog
                     classes={{
                       root: classes.center,
@@ -171,7 +172,7 @@ class ProductSection extends React.Component {
                 </CardBody>
                 <CardFooter className={classes.cardFooter}>
                   <Button
-                    color="primary"
+                    color="success"
                     block
                     onClick={() => this.handleClickOpen("mechouiModal")}
                   >
@@ -231,11 +232,14 @@ class ProductSection extends React.Component {
                 </CardFooter>
               </Card>
             </GridItem>
-
             <GridItem xs={12} sm={12} md={6}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
-                  <img src={tablesAndChairs} alt="Wedding decorations" className={imageClasses} />
+                  <img
+                    src={tablesAndChairs}
+                    alt="Wedding decorations"
+                    className={imageClasses}
+                  />
                 </GridItem>
                 <h4 className={classes.cardTitle}>Tables and chairs</h4>
                 <CardBody>
@@ -246,7 +250,7 @@ class ProductSection extends React.Component {
 
                 <CardFooter className={classes.cardFooter}>
                   <Button
-                    color="primary"
+                    color="success"
                     block
                     onClick={() => this.handleClickOpen("tableModal")}
                   >
@@ -311,23 +315,29 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
-                  <img src={portableToilet} alt="Portable toilet" className={imageClasses} />
+                  <img
+                    src={portableToilet}
+                    alt="Portable toilet"
+                    className={imageClasses}
+                  />
                 </GridItem>
                 <h4 className={classes.cardTitle}>Portable toilets</h4>
                 <CardBody>
                   <p className={classes.description}>
-                    We pride ourselves on ensuring the toilets spotless on arrival.
+                    A variety of models are available for you to chose from. We
+                    pride ourselves on ensuring the toilets spotless on arrival.
                   </p>
                 </CardBody>
 
                 <CardFooter className={classes.cardFooter}>
                   <Button
-                    color="primary"
+                    color="success"
                     block
                     onClick={() => this.handleClickOpen("toiletModal")}
                   >
-                    <LibraryBooks className={classes.icon} />Details
-                      </Button>
+                    <LibraryBooks className={classes.icon} />
+                    Details
+                  </Button>
                   <Dialog
                     classes={{
                       root: classes.center,
