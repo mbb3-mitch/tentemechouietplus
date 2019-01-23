@@ -29,8 +29,8 @@ class WorkSection extends React.Component {
                 email with your questions.
               </p>
               <p>
-                <b>Monday to Friday :</b>
-                8h00 to 17h30
+                <b>7 days a week:</b>
+                9h00 to 21h00
               </p>
               <p>
                 <b>Telephone :</b>
@@ -39,10 +39,10 @@ class WorkSection extends React.Component {
               <p>
                 <b>Email :</b>
                 <a
-                  href="mailto:jasonlynn2009@hotmail.com?Subject=Tente Mechoui et plus"
+                  href="mailto:tentemechouietplus@gmail.com?Subject=Tente Mechoui et plus"
                   target="_top"
                 >
-                  jasonlynn2009@hotmail.com
+                  tentemechouietplus@gmail.com
                 </a>
               </p>
             </h4>
