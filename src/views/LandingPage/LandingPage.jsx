@@ -25,13 +25,15 @@ const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes, match, ...rest } = this.props;
+    // eslint-disable-next-line prettier/prettier
+    const labels = require(`labels/labels_${match.params.lang === "fr" ? "fr_CA" : "en_CA"}.json`);
     return (
       <div>
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Tents, Mechoui and more"
+          brand={labels.brand}
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -44,21 +46,17 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Event planning made simple</h1>
-                <h4>
-                  Every outdoor event can be a difficult task to handle. Let us
-                  help you make it easier, by offering you everything you need
-                  to host an outdoor event.
-                </h4>
+                <h1 className={classes.title}>{labels.parallaxTitle}</h1>
+                <h4>{labels.parallaxSubtitle}</h4>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ProductSection />
-            <TeamSection />
-            <WorkSection />
+            <ProductSection labels={labels} />
+            <TeamSection labels={labels} />
+            <WorkSection labels={labels} />
           </div>
         </div>
         <Footer />

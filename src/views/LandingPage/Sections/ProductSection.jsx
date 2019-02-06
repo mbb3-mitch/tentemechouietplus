@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -9,7 +10,6 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
 import Slide from "@material-ui/core/Slide";
 import IconButton from "@material-ui/core/IconButton";
-
 
 // @material-ui/icons
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
@@ -54,7 +54,7 @@ class ProductSection extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, labels } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgFluid,
@@ -64,15 +64,8 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Our Promise to you</h2>
-            <h5 className={classes.description}>
-              When you ask us to help you host your outdoor event, we dedicate
-              ourselves to providing you with high quality clean white tents, a
-              delicious méchoui, chairs and tables, portable toilets, and above
-              all else, excellent customer service. If you are not satisfied,
-              please let us know and we will do whatever we can to make things
-              right!
-            </h5>
+            <h2 className={classes.title}>{labels.productTitle}</h2>
+            <h5 className={classes.description}>{labels.productDescription}</h5>
           </GridItem>
         </GridContainer>
         <div>
@@ -80,15 +73,16 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
-                  <img src={weddingTent} alt="Wedding reception decorations" className={imageClasses} />
+                  <img
+                    src={weddingTent}
+                    alt="Wedding reception decorations"
+                    className={imageClasses}
+                  />
                 </GridItem>
-                <h4 className={classes.cardTitle}>Tents</h4>
+                <h4 className={classes.cardTitle}>{labels.tents}</h4>
                 <CardBody>
                   <p className={classes.description}>
-                    We take pride in our work, and it shows. Every time we
-                    install we make sure that it is meticulously cleaned and
-                    inspected ensuring it has no blemishes. We guarantee that it
-                    will be an experience worth having.
+                    {labels.tentsDescription}
                   </p>
                 </CardBody>
                 <CardFooter className={classes.cardFooter}>
@@ -98,7 +92,7 @@ class ProductSection extends React.Component {
                     onClick={() => this.handleClickOpen("tentModal")}
                   >
                     <LibraryBooks className={classes.icon} />
-                    Details
+                    {labels.details}
                   </Button>
                   <Dialog
                     classes={{
@@ -126,22 +120,22 @@ class ProductSection extends React.Component {
                       >
                         <Close className={classes.modalClose} />
                       </IconButton>
-                      <h4 className={classes.modalTitle}>Tents</h4>
+                      <h4 className={classes.modalTitle}>{labels.tents}</h4>
                     </DialogTitle>
                     <DialogContent
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
                       <p>
-                        We offer tents in various sizes:
+                        {labels.tentModal.p1}
                         <ul>
-                          <li>20 x20</li>
-                          <li>20 x30</li>
-                          <li>20 x40</li>
-                          <li>30 x40</li>
-                          <li>30 x60</li>
-                          <li>30 x80</li>
-                          <li>30 x100</li>
+                          <li>{labels.tentModal.li1}</li>
+                          <li>{labels.tentModal.li2}</li>
+                          <li>{labels.tentModal.li3}</li>
+                          <li>{labels.tentModal.li4}</li>
+                          <li>{labels.tentModal.li5}</li>
+                          <li>{labels.tentModal.li6}</li>
+                          <li>{labels.tentModal.li7}</li>
                         </ul>
                       </p>
                     </DialogContent>
@@ -151,7 +145,7 @@ class ProductSection extends React.Component {
                         color="danger"
                         simple
                       >
-                        Close
+                        {labels.close}
                       </Button>
                     </DialogActions>
                   </Dialog>
@@ -161,13 +155,16 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
-                  <img src={mechoui} alt="Méchoui trailer" className={imageClasses} />
+                  <img
+                    src={mechoui}
+                    alt="Méchoui trailer"
+                    className={imageClasses}
+                  />
                 </GridItem>
-                <h4 className={classes.cardTitle}>Méchouis</h4>
+                <h4 className={classes.cardTitle}>{labels.mechouis}</h4>
                 <CardBody>
                   <p className={classes.description}>
-                    Our catering service includes full course meal customizable
-                    to your choice. Ask us about our rental service of mechoui machines with computer automated cooking.
+                    {labels.mechouisDescription}
                   </p>
                 </CardBody>
                 <CardFooter className={classes.cardFooter}>
@@ -176,8 +173,9 @@ class ProductSection extends React.Component {
                     block
                     onClick={() => this.handleClickOpen("mechouiModal")}
                   >
-                    <LibraryBooks className={classes.icon} />Details
-                      </Button>
+                    <LibraryBooks className={classes.icon} />
+                    {labels.details}
+                  </Button>
                   <Dialog
                     classes={{
                       root: classes.center,
@@ -204,20 +202,20 @@ class ProductSection extends React.Component {
                       >
                         <Close className={classes.modalClose} />
                       </IconButton>
-                      <h4 className={classes.modalTitle}>Méchoui</h4>
+                      <h4 className={classes.modalTitle}>{labels.mechouis}</h4>
                     </DialogTitle>
                     <DialogContent
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
-                      <p>Catoring services: </p>
-                      <ul>
-                        <li>Plates are fully customizable</li>
-                        <li>
-                          Various types of meat can be cooked at the same time
-                        </li>
-                        <li>Vegetarian options can be available</li>
-                      </ul>
+                      <p>
+                        {labels.mechouiModal.p1}
+                        <ul>
+                          <li>{labels.mechouiModal.li1}</li>
+                          <li>{labels.mechouiModal.li2}</li>
+                          <li>{labels.mechouiModal.li3}</li>
+                        </ul>
+                      </p>
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
                       <Button
@@ -225,7 +223,7 @@ class ProductSection extends React.Component {
                         color="danger"
                         simple
                       >
-                        Close
+                        {labels.close}
                       </Button>
                     </DialogActions>
                   </Dialog>
@@ -241,10 +239,10 @@ class ProductSection extends React.Component {
                     className={imageClasses}
                   />
                 </GridItem>
-                <h4 className={classes.cardTitle}>Tables and chairs</h4>
+                <h4 className={classes.cardTitle}>{labels.tables}</h4>
                 <CardBody>
                   <p className={classes.description}>
-                    We offer several models of tables and chairs to suit the decor style of your event.
+                    {labels.tablesDescription}
                   </p>
                 </CardBody>
 
@@ -254,8 +252,9 @@ class ProductSection extends React.Component {
                     block
                     onClick={() => this.handleClickOpen("tableModal")}
                   >
-                    <LibraryBooks className={classes.icon} />Details
-                      </Button>
+                    <LibraryBooks className={classes.icon} />
+                    {labels.details}
+                  </Button>
                   <Dialog
                     classes={{
                       root: classes.center,
@@ -282,21 +281,21 @@ class ProductSection extends React.Component {
                       >
                         <Close className={classes.modalClose} />
                       </IconButton>
-                      <h4 className={classes.modalTitle}>Tables and chairs</h4>
+                      <h4 className={classes.modalTitle}>{labels.tables}</h4>
                     </DialogTitle>
                     <DialogContent
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
-                      <p>Tables:</p>
+                      <p>{labels.tableModal.p1}</p>
                       <ul>
-                        <li>Round</li>
-                        <li>Rectangle</li>
+                        <li>{labels.tableModal.li1}</li>
+                        <li>{labels.tableModal.li2}</li>
                       </ul>
-                      <p>Fanback folding chairs:</p>
+                      <p>{labels.tableModal.p2}</p>
                       <ul>
-                        <li>Black</li>
-                        <li>White</li>
+                        <li>{labels.tableModal.li3}</li>
+                        <li>{labels.tableModal.li4}</li>
                       </ul>
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
@@ -305,7 +304,7 @@ class ProductSection extends React.Component {
                         color="danger"
                         simple
                       >
-                        Close
+                        {labels.close}
                       </Button>
                     </DialogActions>
                   </Dialog>
@@ -321,11 +320,10 @@ class ProductSection extends React.Component {
                     className={imageClasses}
                   />
                 </GridItem>
-                <h4 className={classes.cardTitle}>Portable toilets</h4>
+                <h4 className={classes.cardTitle}>{labels.toilets}</h4>
                 <CardBody>
                   <p className={classes.description}>
-                    A variety of models are available for you to chose from. We
-                    pride ourselves on ensuring the toilets spotless on arrival.
+                    {labels.toiletsDescription}
                   </p>
                 </CardBody>
 
@@ -336,7 +334,7 @@ class ProductSection extends React.Component {
                     onClick={() => this.handleClickOpen("toiletModal")}
                   >
                     <LibraryBooks className={classes.icon} />
-                    Details
+                    {labels.details}
                   </Button>
                   <Dialog
                     classes={{
@@ -364,23 +362,17 @@ class ProductSection extends React.Component {
                       >
                         <Close className={classes.modalClose} />
                       </IconButton>
-                      <h4 className={classes.modalTitle}>Portable Toilets</h4>
+                      <h4 className={classes.modalTitle}>{labels.toilets}</h4>
                     </DialogTitle>
                     <DialogContent
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
-                      <p>Models available:</p>
+                      <p>{labels.toiletModal.p1}</p>
                       <ul>
-                        <li>
-                          Standard model - Includes toilet paper. Sanitation
-                          pumps available on rental.
-                        </li>
-                        <li>
-                          Deluxe model - Includes hand soap, toilet paper, paper
-                          towel, waste basket, lights.
-                        </li>
-                        <li>Handicap model - Includes toilet paper.</li>
+                        <li>{labels.toiletModal.li1}</li>
+                        <li>{labels.toiletModal.li2}</li>
+                        <li>{labels.toiletModal.li3}</li>
                       </ul>
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
@@ -389,7 +381,7 @@ class ProductSection extends React.Component {
                         color="danger"
                         simple
                       >
-                        Close
+                        {labels.close}
                       </Button>
                     </DialogActions>
                   </Dialog>
@@ -403,4 +395,8 @@ class ProductSection extends React.Component {
   }
 }
 
+ProductSection.propTypes = {
+  classes: PropTypes.object.isRequired,
+  labels: PropTypes.object.isRequired
+};
 export default withStyles(productStyle)(ProductSection);

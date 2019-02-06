@@ -1,0 +1,61 @@
+{
+    "brand": "Tent Méchoui & Plus",
+    "details": "Details",
+    "close": "Close",
+    "parallaxTitle": "Event planning made simple",
+    "parallaxSubtitle": "Every outdoor event can be a difficult task to handle. Let us help you make it easier, by offering you everything you need to host an outdoor event.",
+    "productTitle": "Our Promise to you",
+    "productDescription": "When you ask us to help you host your outdoor event, we dedicate ourselves to providing you high quality clean white tents, a delicious méchoui, chairs and tables, portable toilets, and above all else, excellent customer service. If you are not satisfied, please let us know and we will do whatever we can to make things right!",
+    "tents": "Tents",
+    "tentsDescription": "We take pride in our work, and it shows. Every time we install we make sure that it is meticulously cleaned and inspected ensuring it has no blemishes. We guarantee that it will be an experience worth having.",
+    "tentModal": {
+        "p1": "We offer tents and marquees in various sizes:",
+        "li1": "20 x 20",
+        "li2": "20 x 30",
+        "li3": "20 x 40",
+        "li4": "30 x 40",
+        "li5": "30 x 60",
+        "li6": "30 x 80",
+        "li7": "30 x 100"
+    },
+    "mechouis": "Méchouis",
+    "mechouisDescription": "Our catering service includes full course meal customizable to your choice. Ask us about our rental service of méchouis machines with computer automated cooking.",
+    "mechouiModal": {
+        "p1": "We offer tents and marquees in various sizes:",
+        "li1": "Plates are fully customizable",
+        "li2": "Various types of meat can be cooked at the same time",
+        "li3": "Vegetarian options can be available"
+    },
+    "tables": "Tables and chairs",
+    "tablesDescription": "We offer several models of tables and chairs to suit the decor style of your event.",
+    "tableModal": {
+        "p1": "Tables:",
+        "li1": "Round",
+        "li2": "Rectangle",
+        "p2": "Fanback folding chairs:",
+        "li3": "Black",
+        "li4": "White"
+    },
+    "toilets": "Portable toilets",
+    "toiletsDescription": "A variety of models are available for you to chose from. We pride ourselves on ensuring the toilets spotless on arrival.",
+    "toiletModal": {
+        "p1": "Models available:",
+        "li1": "Standard model - Includes toilet paper. Sanitation pumps available on rental.",
+        "li2": "Deluxe model - Includes hand soap, toilet paper, paper towel, waste basket, lights.",
+        "li3": "Handicap model - Includes toilet paper."
+    },
+    "teamTitle": "About us",
+    "team": "Jason and Lynn Bedard",
+    "teamDescription": "Tent méchouis & plus is a family business that offers you quality service.",
+    "contactTitle": "Work with us",
+    "contactDescription": {
+        "p1": "Tent Mechoui & Plus is a company that specializes in equipment rental. They accompany you in your special events in the areas of Sherbrooke, Granby, Magog, Bromont, Cowansville. It would be our pleasure to answer any of your questions and help you make a reservation to ensure your outdoor event goes exactly as planned.",
+        "p2": "Please give us a call during our business hours or send us an email with your questions.",
+        "b3": "7 days a week: ",
+        "p3": "9h00 to 21h00",
+        "b4": "Telephone: ",
+        "p4": "(450)-538-1838",
+        "b5": "Email: ",
+        "p5": "tentemechouietplus@gmail.com"
+    }
+}

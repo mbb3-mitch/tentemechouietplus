@@ -12,37 +12,30 @@ import workStyle from "assets/jss/material-kit-react/views/landingPageSections/w
 
 class WorkSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, labels } = this.props;
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem cs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Work with us</h2>
+            <h2 className={classes.title}>{labels.contactTitle}</h2>
             <h4 className={classes.description}>
+              <p>{labels.contactDescription.p1}</p>
+              <p>{labels.contactDescription.p2}</p>
               <p>
-                It would be our pleasure to answer any of your questions and
-                help you make a reservation to ensure your outdoor event goes
-                exactly as planned.
+                <b>{labels.contactDescription.b3}</b>
+                {labels.contactDescription.p3}
               </p>
               <p>
-                Please give us a call during our business hours or send us an
-                email with your questions.
+                <b>{labels.contactDescription.b4}</b>
+                <a href="tel:1(450)-538-1838">{labels.contactDescription.p4}</a>
               </p>
               <p>
-                <b>7 days a week:</b>
-                9h00 to 21h00
-              </p>
-              <p>
-                <b>Telephone :</b>
-                <a href="tel:1(450)-538-1838">(450)-538-1838</a>
-              </p>
-              <p>
-                <b>Email :</b>
+                <b>{labels.contactDescription.b5}</b>
                 <a
                   href="mailto:tentemechouietplus@gmail.com?Subject=Tente Mechoui et plus"
                   target="_top"
                 >
-                  tentemechouietplus@gmail.com
+                  {labels.contactDescription.p5}
                 </a>
               </p>
             </h4>
@@ -54,6 +47,7 @@ class WorkSection extends React.Component {
 }
 
 WorkSection.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  labels: PropTypes.object.isRequired
 };
 export default withStyles(workStyle)(WorkSection);

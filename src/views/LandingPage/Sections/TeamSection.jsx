@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -18,7 +19,7 @@ import team from "assets/img/team-min.jpg";
 
 class TeamSection extends React.Component {
   render() {
-    const { classes } = this.props;
+    const { classes, labels } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -26,7 +27,7 @@ class TeamSection extends React.Component {
     );
     return (
       <div className={classes.section}>
-        <h2 className={classes.title}>About us</h2>
+        <h2 className={classes.title}>{labels.teamTitle}</h2>
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
@@ -34,11 +35,10 @@ class TeamSection extends React.Component {
                 <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
                   <img src={team} alt="..." className={imageClasses} />
                 </GridItem>
-                <h4 className={classes.cardTitle}>Jason and Lynn Bedard</h4>
+                <h4 className={classes.cardTitle}>{labels.team}</h4>
                 <CardBody>
                   <p className={classes.description}>
-                    Tente mechoui and more is a family business that offers you
-                    quality service.
+                    {labels.teamDescription}
                   </p>
                 </CardBody>
               </Card>
@@ -50,4 +50,8 @@ class TeamSection extends React.Component {
   }
 }
 
+TeamSection.propTypes = {
+  classes: PropTypes.object.isRequired,
+  labels: PropTypes.object.isRequired
+};
 export default withStyles(teamStyle)(TeamSection);
