@@ -1,3 +1,64 @@
 {
-    "brand": "Tente Méchoui & Plus"
+    "brand": "Tent Méchoui & Plus",
+    "language": "English",
+    "languagePath": "/en",
+    "facebook": "Suis nous sur Facebook",
+    "details": "Détails",
+    "close": "Fermer",
+    "parallaxTitle": "La planification d'événement simplifiée",
+    "parallaxSubtitle": "Chaque événement en plein air peut être une tâche difficile à gérer. Laissez-nous vous aider à le rendre plus facile en vous offrant tout ce dont vous avez besoin pour organiser un événement en plein air.",
+    "productTitle": "Notre promesse à vous",
+    "productDescription": "Lorsque vous nous demandez de vous aider à organiser votre événement en plein air, nous nous engageons à vous fournir des tentes blanches propres et de haute qualité, un délicieux méchoui, des chaises et des tables, des toilettes portables et, par-dessus tout, un excellent service client. Si vous n'êtes pas satisfait , s'il vous plaît laissez-nous savoir et nous ferons tout ce que nous pouvons pour arranger les choses!",
+    "tents": "Tentes",
+    "tentsDescription": "Nous sommes fiers de notre travail et cela se voit. Chaque fois que nous installons, nous nous assurons qu'il soit méticuleusement nettoyé et inspecté pour nous assurer qu'il ne présente aucun défaut. Nous vous garantissons que ce sera une expérience qui vaille la peine d'être vécue.",
+    "tentModal": {
+        "p1": "Nous proposons des tentes et des chapiteaux de différentes tailles:",
+        "li1": "20 x 20",
+        "li2": "20 x 30",
+        "li3": "20 x 40",
+        "li4": "30 x 40",
+        "li5": "30 x 60",
+        "li6": "30 x 80",
+        "li7": "30 x 100"
+    },
+    "mechouis": "Méchouis",
+    "mechouisDescription": "Notre service de traiteur comprend un repas complet, personnalisable selon votre choix. Demandez-nous sur notre service de location de machines à méchouis avec cuisson automatisée par ordinateur.",
+    "mechouiModal": {
+        "p1": "Nous proposons des tentes et des chapiteaux de différentes tailles:",
+        "li1": "Les menus sont entièrement personnalisables",
+        "li2": "Différents types de viande peuvent être cuits en même temps",
+        "li3": "Des options végétariennes peuvent être disponibles"
+    },
+    "tables": "Tables et chaises",
+    "tablesDescription": "Nous proposons plusieurs modèles de tables et de chaises en fonction du style de décor de votre événement.",
+    "tableModal": {
+        "p1": "Tables:",
+        "li1": "Round",
+        "li2": "Rectangle",
+        "p2": "Chaises pliantes Fanback:",
+        "li3": "Noir",
+        "li4": "Blanc"
+    },
+    "toilets": "Toilettes chimiques",
+    "toiletsDescription": "Vous avez le choix parmi une variété de modèles. Nous sommes fiers de veiller à ce que les toilettes soient impeccables à votre arrivée.",
+    "toiletModal": {
+        "p1": "Modèles disponibles:",
+        "li1": "Modèle standard - Comprend le papier toilette. Pompes sanitaires disponibles en location.",
+        "li2": "Modèle de luxe - comprend savon à main, papier toilette, essuie-tout, corbeille à papier, lampes.",
+        "li3": "Modèle pour handicapé - comprend le papier toilette."
+    },
+    "teamTitle": "À propos de nous",
+    "team": "Jason and Lynn Bedard",
+    "teamDescription": "Tent méchouis & plus est une entreprise familiale qui vous offre un service de qualité.",
+    "contactTitle": "Travaille avec nous",
+    "contactDescription": {
+        "p1": "Tente Mechoui & Plus est une entreprise spécialisée dans la location de matériel. Ils vous accompagnent dans vos événements spéciaux dans les régions de Sherbrooke, Granby, Magog, Bromont, Cowansville. Il nous fera plaisir de répondre à vos questions et de vous aider à faire une réservation pour que votre événement en plein air se déroule exactement comme prévu.",
+        "p2": "S'il vous plaît appelez-nous pendant nos heures d'ouverture ou envoyez-nous un email avec vos questions.",
+        "b3": "7 jours par semaine: ",
+        "p3": "9h00 à 21h00",
+        "b4": "Téléphone: ",
+        "p4": "(450)-538-1838",
+        "b5": "Courriel: ",
+        "p5": "tentemechouietplus@gmail.com"
+    }
 }

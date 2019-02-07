@@ -1,5 +1,8 @@
 {
     "brand": "Tent Méchoui & Plus",
+    "language": "Français",
+    "languagePath": "/fr",
+    "facebook": "Follow us on Facebook",
     "details": "Details",
     "close": "Close",
     "parallaxTitle": "Event planning made simple",

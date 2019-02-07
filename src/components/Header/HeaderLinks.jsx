@@ -23,9 +23,14 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+        <Link to={"" + labels.languagePath} className={classes.navLink}>
+          {labels.language}
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on facebook"
+          title={labels.facebook}
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
